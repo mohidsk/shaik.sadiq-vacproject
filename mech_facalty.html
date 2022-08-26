@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mech_faculity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+           
+             <img  src="data:image/jpeg;base64,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"></img>
+          
+            <span class="ml-3 text-xl"><font size="8" color="red">RIT</font><br>(Raghu institute of technology)</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a class="mr-5 hover:text-gray-900" href="htmlproject_department.html" >Departments</a>
+            <a class="mr-5 hover:text-gray-900"href="htmlprojectlibrary.html">Library</a>
+            <a class="mr-5 hover:text-gray-900" href="htmlprojectevents.html">Events</a>
+            <a class="mr-5 hover:text-gray-900" href="htmlprojectaboutus.html">Contact us</a>
+          </nav>
+        </div>
+      </header>
+      <hr>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/vijaykumar-1-600x400.jpg" alt="content">
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">DR. P. VIJAYA KUMAR, M.E., PH.D</h2>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/nagabhushanam-1-600x400.jpg" alt="content">
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">DR. V. NAGA BHUSHANA RAO, M.E., PH.D</h2>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/26-600x400.jpg" alt="content">
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">DR. E. V. V. RAMANA MURTHY, M.TECH., PH.D.</h2>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/hemalatha-600x400.jpg" alt="content">
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">DR. S. HEMALATHA, M.E., PH.D.</h2>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/srinivasarao-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">P. SRINIVASA RAO, M.E.</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/vijay-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">P. VIJAY, M.TECH, (PH.D.)</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/krishna-kanth-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">V. KRISHNA KANTH, M.TECH., (PH.D.)</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/IMG_2812-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">K. SURESH BABU, M.TECH., (PH.D)</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/venumadhav-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">G. VENU MADHAV, M.TECH., (PH.D)</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2022/08/anusha2.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">K. ANUSHA, M.TECH</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/IMG_20210101_123925-1.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">P. RAJESH KUMAR, M.TECH</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/k-swathi.png" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">K. SWATHI, M.TECH., (PH.D)</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/IMG_2751-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Y. KESAVA RAO, M.TECH.</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/venu-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">B. VENU, M.E., (PH.D)</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/IMG_2800-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">I. MOHAN RAO, M.TECH</h2>
+                </div>
+              </div>
+               <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/29-600x400.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">M. SREERAMA, M.TECH., (PH.D)</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2020/09/sramalakshmi.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">S. RAMA LAKSHMI MALLADI, M.TECH., (PH.D)</h2>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.raghuinstech.com/wp-content/uploads/2022/08/ashwini.jpg" alt="content">
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">K. ASHWINI, M.TECH.</h2>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <hr>
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 raghu institute of technology —
+            <a href="http://127.0.0.1:5500/htmlproject.html" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@raghuinstech</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>    
+      
+</body>
+</html>
